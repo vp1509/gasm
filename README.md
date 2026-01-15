@@ -10,8 +10,8 @@ No libc. No runtime. No dynamic allocation. Just pure `int 0x80` syscalls.
 
 | Metric | GASM | Typical Web Server |
 | :--- | :--- | :--- |
-| **Binary Size** | **~2.8 KB** | 50MB+ |
-| **RAM Usage** | **~24 KB** | 100MB+ |
+| **Binary Size** | **1.2 KB** | 50MB+ |
+| **RAM Usage** | **24 KB** | 100MB+ |
 | **Dependencies** | **0** | ∞ |
 | **Min CPU** | **Intel 386 (1985)** | Core i7 |
 
